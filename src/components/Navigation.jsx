@@ -7,7 +7,7 @@ function Navigation(props) {
       <nav class="navbar navbar-expand navbar-dark bg-dark">
         <div class="container">
           <Link class="navbar-brand" to="/">
-            ALLIE
+            ALLY
           </Link>
 
           <div>
@@ -38,6 +38,15 @@ function Navigation(props) {
               >
                 <Link class="nav-link" to="/contact">
                   Contact
+                </Link>
+              </li>
+              <li
+                class={`nav-item  ${
+                  props.location.pathname === "/animals" ? "active" : ""
+                }`}
+              >
+                <Link class="nav-link" to="/animals">
+                  Animals
                 </Link>
               </li>
             </ul>
