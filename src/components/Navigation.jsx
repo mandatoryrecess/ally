@@ -24,20 +24,20 @@ function Navigation(props) {
               </li>
               <li
                 class={`nav-item  ${
-                  props.location.pathname === "/about" ? "active" : ""
+                  props.location.pathname === "/ripple" ? "active" : ""
                 }`}
               >
-                <Link class="nav-link" to="/about">
-                  About
+                <Link class="nav-link" to="/ripple">
+                  Ripple
                 </Link>
               </li>
               <li
                 class={`nav-item  ${
-                  props.location.pathname === "/contact" ? "active" : ""
+                  props.location.pathname === "/messages" ? "active" : ""
                 }`}
               >
-                <Link class="nav-link" to="/contact">
-                  Contact
+                <Link class="nav-link" to="/messages">
+                Messages
                 </Link>
               </li>
               <li
@@ -47,6 +47,24 @@ function Navigation(props) {
               >
                 <Link class="nav-link" to="/animals">
                   Animals
+                </Link>
+              </li>
+              <li
+                class={`nav-item  ${
+                  props.location.pathname === "/dots" ? "active" : ""
+                }`}
+              >
+                <Link class="nav-link" to="/dots">
+                  Dots
+                </Link>
+              </li>
+              <li
+                class={`nav-item  ${
+                  props.location.pathname === "/ombre" ? "active" : ""
+                }`}
+              >
+                <Link class="nav-link" to="/ombre">
+                  Ombre
                 </Link>
               </li>
             </ul>
