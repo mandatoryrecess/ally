@@ -1,61 +1,56 @@
 import React from "react";
 import { Link, withRouter } from "react-router-dom";
+import "./Home.css";
 
 function Home(props) {
- 
- 
   return (
-    <div className="home">
-      <div class="container">
-        <h1 class="font-weight-light">Home</h1>
-        <ul>
-          <li
-            class={`nav-item  ${
-              props.location.pathname === "/ripple" ? "active" : ""
-            }`}
-          >
-            <Link class="nav-link" to="/ripple">
-              Ripple
-              <span class="sr-only">(current)</span>
-            </Link>
-          </li>
-          <li
-            class={`nav-item  ${
-              props.location.pathname === "/messages" ? "active" : ""
-            }`}
-          >
-            <Link class="nav-link" to="/messages">
-              Messages
-            </Link>
-          </li>
-          <li
-            class={`nav-item  ${
-              props.location.pathname === "/animals" ? "active" : ""
-            }`}
-          >
-            <Link class="nav-link" to="/animals">
-              Animals
-            </Link>
-          </li>
-          <li
-            class={`nav-item  ${
-              props.location.pathname === "/dots" ? "active" : ""
-            }`}
-          >
-            <Link class="nav-link" to="/dots">
-              Dots
-            </Link>
-          </li>
-          <li
-            class={`nav-item  ${
-              props.location.pathname === "/ombre" ? "active" : ""
-            }`}
-          >
-            <Link class="nav-link" to="/ombre">
-              Ombre
-            </Link>
-          </li>
-        </ul>
+    <div class="container">
+      <div class="blobs">
+        {/* <h1 class="font-weight-light">Home</h1> */}
+        <Link
+          id="ombre-room"
+          class={`nav-item  ${
+            props.location.pathname === "/ombre" ? "active" : ""
+          }`}
+          to="/ombre"
+        ></Link>
+
+        <Link
+          id="ripple-room"
+          class={`nav-item  ${
+            props.location.pathname === "/ripple" ? "active" : ""
+          }`}
+          to="/ripple"
+        >
+          <span class="sr-only">(current)</span>
+        </Link>
+
+        <Link
+          id="messages-room"
+          class={`nav-item  ${
+            props.location.pathname === "/messages" ? "active" : ""
+          }`}
+          to="/messages"
+        >
+        </Link>
+
+        <Link
+          id="animals-room"
+          class={`nav-item  ${
+            props.location.pathname === "/animals" ? "active" : ""
+          }`}
+          to="/animals"
+        >
+        </Link>
+
+        <Link
+          id="dots-room"
+          class={`nav-item  ${
+            props.location.pathname === "/dots" ? "active" : ""
+          }`}
+          to="/dots"
+        >
+        </Link>
       </div>
     </div>
   );
