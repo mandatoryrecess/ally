@@ -1,18 +1,18 @@
 import axios from "axios";
 import React from "react";
 
-const baseURL = "http://localhost:3002/messages";
-// const baseURL = "https://jsonplaceholder.typicode.com/posts/1";
+const api_call = "/messages";
 
-export default function Messages() {
+export default function Messages(props) {
   const [post, setPost] = React.useState(null);
 
   React.useEffect(() => {
-    axios.get(baseURL).then((response) => {
+    axios.get(api_call).then((response) => {
       setPost(response.data);
-      console.log(response)
     });
   }, []);
+
+
 
   if (!post) return null;
 
@@ -20,8 +20,14 @@ export default function Messages() {
     <div className="Messages">
       <div class="container">
         <h1 class="font-weight-light">Messages</h1>
-        <h3>{post.messages}</h3>
-        <p>{post.mood_icon_url}</p>
+        {post.map((messageObj) => {
+          let returnArray = [];
+          const notes = messageObj.messages;
+          const image = messageObj.mood_icon_url;
+          returnArray.push(notes, image)
+          return returnArray;
+        })}
+
       </div>
     </div>
   );
