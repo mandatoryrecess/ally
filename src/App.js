@@ -15,7 +15,6 @@ function App() {
           <Route path="/dots" exact component={() => <Dots />} />
           <Route path="/ombre" exact component={() => <Ombre />} />
         </Switch>
-        <Footer />
       </Router>
     </div>
   );

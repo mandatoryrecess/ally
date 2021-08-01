@@ -1,0 +1,25 @@
+:root {
+	--background: #fff;
+	--primary: #DB7D7D;
+	--secondary: #FCD5D5;
+	--third: #CF5E5E;
+}
+
+.return-home {
+  border: none;
+}
+
+.return-home:hover {
+  transition: all .3s linear;
+  -webkit-transition: all .3s linear;
+  -o-transition: all .3s linear;
+  -moz-transition: all .3s linear;
+  text-decoration: none;
+  border-bottom:none;
+  color: var(--primary);
+}
+
+.fas {
+  height: 100px;
+  width: 100px;
+}

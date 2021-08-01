@@ -1,0 +1,21 @@
+:root {
+	--background: #fff;
+	--primary: #DB7D7D;
+	--secondary: #FCD5D5;
+	--third: #CF5E5E;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+.container {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  flex-direction: column;
+  background-color: linear-gradient(180deg, rgba(3,68,12,1) 0%, rgba(9,121,27,1) 40%, rgba(54,194,60,1) 100%);
+}
