@@ -1,5 +1,6 @@
 import axios from "axios";
 import React from "react";
+import "./Messages.css";
 
 const api_call = "/messages";
 
@@ -12,7 +13,10 @@ export default function Messages(props) {
     });
   }, []);
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> feature/write-a-message
   if (!post) return null;
 
   const notes = post.map((messageObj) => {
@@ -28,10 +32,22 @@ export default function Messages(props) {
     <div className="Messages">
       <div class="container">
         <h1 class="font-weight-light">Messages</h1>
+<<<<<<< HEAD
 
       <h2>Notes</h2>  {notes}
       <h2>images</h2>  {images}
 
+=======
+        <div class="archive">
+          {post.map((messageObj) => {
+            let returnArray = [];
+            const notes = messageObj.messages;
+            const image = messageObj.mood_icon_url;
+            returnArray.push(notes, image);
+            return returnArray;
+          })}
+        </div>
+>>>>>>> feature/write-a-message
       </div>
     </div>
   );

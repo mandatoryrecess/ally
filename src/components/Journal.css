@@ -1,0 +1,9 @@
+.uploading-thoughts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.your-thought {
+  margin-bottom: 10%;
+}
