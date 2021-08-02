@@ -12,32 +12,22 @@ export default function Messages(props) {
       setPost(response.data);
     });
   }, []);
-
-<<<<<<< HEAD
-
-=======
->>>>>>> feature/write-a-message
+  
   if (!post) return null;
 
-  const notes = post.map((messageObj) => {
-    return messageObj.messages;
+  // const notes = post.map((messageObj) => {
+  //   return messageObj.messages;
     
-  })
+  // })
 
-  const images = post.map((messageObj) => {
-    return messageObj.mood_icon_url;
-  })
+  // const images = post.map((messageObj) => {
+  //   return messageObj.mood_icon_url;
+  // })
 
   return (
     <div className="Messages">
       <div class="container">
         <h1 class="font-weight-light">Messages</h1>
-<<<<<<< HEAD
-
-      <h2>Notes</h2>  {notes}
-      <h2>images</h2>  {images}
-
-=======
         <div class="archive">
           {post.map((messageObj) => {
             let returnArray = [];
@@ -47,7 +37,6 @@ export default function Messages(props) {
             return returnArray;
           })}
         </div>
->>>>>>> feature/write-a-message
       </div>
     </div>
   );
