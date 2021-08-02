@@ -13,20 +13,24 @@ export default function Messages(props) {
   }, []);
 
 
-
   if (!post) return null;
+
+  const notes = post.map((messageObj) => {
+    return messageObj.messages;
+    
+  })
+
+  const images = post.map((messageObj) => {
+    return messageObj.mood_icon_url;
+  })
 
   return (
     <div className="Messages">
       <div class="container">
         <h1 class="font-weight-light">Messages</h1>
-        {post.map((messageObj) => {
-          let returnArray = [];
-          const notes = messageObj.messages;
-          const image = messageObj.mood_icon_url;
-          returnArray.push(notes, image)
-          return returnArray;
-        })}
+
+      <h2>Notes</h2>  {notes}
+      <h2>images</h2>  {images}
 
       </div>
     </div>
