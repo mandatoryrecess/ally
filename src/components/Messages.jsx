@@ -21,7 +21,7 @@ function Messages(props) {
   const notes = post.map((messageObj) => {
     let messageLength = messageObj.messages;
     if (messageLength.length > 30)
-      messageLength = messageLength.substring(0, 60) + "...........";
+      messageLength = messageLength.substring(0, 30) + "...";
 
     return (
       <div>

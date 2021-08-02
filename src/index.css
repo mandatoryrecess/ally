@@ -13,8 +13,8 @@ a {
 }
 a:link {
   color: #FBA7A7;
-  border-bottom: 1px solid #DB7D7D;
 }
+
 a:visited {
   color: #DB7D7D;
   border-bottom: 1px solid #b3b3b3;
