@@ -51,6 +51,16 @@ function Home(props) {
           to="/dots"
         >
         </Link>
+
+        <Link
+          id="thought-space"
+          class={`nav-item  ${
+            props.location.pathname === "/thought" ? "active" : ""
+          }`}
+          to="/thought"
+        >
+        </Link>
+
       </div>
     </div>
   );
