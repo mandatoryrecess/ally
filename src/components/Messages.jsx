@@ -1,10 +1,13 @@
 import axios from "axios";
 import React from "react";
 import "./Messages.css";
+import { Link, withRouter } from "react-router-dom";
+
+import Collapsible from "react-collapsible";
 
 const api_call = "/messages";
 
-export default function Messages(props) {
+function Messages(props) {
   const [post, setPost] = React.useState(null);
 
   React.useEffect(() => {
@@ -16,23 +19,27 @@ export default function Messages(props) {
   if (!post) return null;
 
   const notes = post.map((messageObj) => {
-    return (<div>
-            <img width="30px" src={messageObj.mood_icon_url} />
-            <span> {messageObj.messages }</span>
-            </div>
-      );
-  })
+    let messageLength = messageObj.messages;
+    if (messageLength.length > 30)
+      messageLength = messageLength.substring(0, 60) + "...........";
 
+    return (
+      <div>
+        <Collapsible trigger={messageLength}>
+          <img width="30px" src={messageObj.mood_icon_url} />
+          <span> {messageObj.messages}</span>
+        </Collapsible>
+      </div>
+    );
+  });
 
   return (
     <div className="Messages">
-      <div class="container">
-      <h2>Notes</h2>{notes}
+      <div class="container">{notes}</div>
+      <div>
+        <Link to="/Journal" class="container pen fas fa-pen-alt"></Link>
       </div>
-      
     </div>
   );
-
-  
-
 }
+export default withRouter(Messages);

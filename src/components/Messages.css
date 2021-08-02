@@ -12,3 +12,23 @@
   height: 100%;
   width: 80%;
 }
+
+
+
+.pen {
+  border: 0px;
+  padding-top: 30px;
+  font-size: 2rem;  
+}
+
+
+.pen:hover {
+  transition: all .3s linear;
+  -webkit-transition: all .3s linear;
+  -o-transition: all .3s linear;
+  -moz-transition: all .3s linear;
+  text-decoration: none;
+  border-bottom:none;
+  color: var(--primary);
+}
+
