@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { Navigation, Home, Ripple, Messages, Animals, Dots, Ombre } from "./components";
-import Thought from "./components/Thought";
+import Journal from "./components/Journal";
 
 function App() {
   return (
@@ -15,7 +15,7 @@ function App() {
           <Route path="/animals" exact component={() => <Animals />} />
           <Route path="/dots" exact component={() => <Dots />} />
           <Route path="/ombre" exact component={() => <Ombre />} />
-          <Route path="/thought" exact component={() => <Thought />} />
+          <Route path="/journal" exact component={() => <Journal />} />
         </Switch>
       </Router>
     </div>

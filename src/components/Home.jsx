@@ -55,9 +55,9 @@ function Home(props) {
         <Link
           id="thought-space"
           class={`nav-item  ${
-            props.location.pathname === "/thought" ? "active" : ""
+            props.location.pathname === "/journal" ? "active" : ""
           }`}
-          to="/thought"
+          to="/journal"
         >
         </Link>
 

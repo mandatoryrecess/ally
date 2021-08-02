@@ -1,9 +1,9 @@
 import React from "react";
-import { TextField, Button, IconButton } from "@material-ui/core";
+import { TextField, IconButton } from "@material-ui/core";
 import CloudUploadIcon from "@material-ui/icons/CloudUpload";
-import "./Thought.css";
+import "./Journal.css";
 
-export default function Thought(props) {
+export default function Journal(props) {
   return (
     <div class="uploading-thoughts">
       <form className="your-thought" noValidate autoComplete="off">
@@ -11,12 +11,15 @@ export default function Thought(props) {
           id="outlined-basic"
           variant="outlined"
           multiline
-          maxRows={5}
+          maxRows={10}
         />
       </form>
       <IconButton color="secondary" aria-label="cloud-upload-icon">
         <CloudUploadIcon />
       </IconButton>
+
+      {/* add mood icons */}
+      
     </div>
   );
 }

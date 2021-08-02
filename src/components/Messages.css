@@ -1,0 +1,14 @@
+.container {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+}
+
+.archive {
+  display: flex;
+  height: 100%;
+  width: 80%;
+}
