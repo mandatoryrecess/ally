@@ -61,6 +61,15 @@ function Home(props) {
         >
         </Link>
 
+        <Link
+          id="thought-space"
+          class={`nav-item  ${
+            props.location.pathname === "/timer" ? "active" : ""
+          }`}
+          to="/timer"
+        >
+        </Link>
+
       </div>
     </div>
   );
