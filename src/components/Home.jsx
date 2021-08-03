@@ -4,7 +4,7 @@ import "./Home.css";
 
 function Home(props) {
   return (
-    <div class="container">
+    <div class="home">
       <div class="blobs">
         {/* <h1 class="font-weight-light">Home</h1> */}
         <Link

@@ -21,7 +21,7 @@ export default function Journal(props) {
   }
 
   return (
-    <div class="container">
+    <div class="journal">
       <div class="uploading-thoughts">
         <form className="your-thought" noValidate autoComplete="off">
           <TextField
