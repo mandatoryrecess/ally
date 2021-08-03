@@ -21,19 +21,19 @@
 .container > div:nth-child(even) {
   background: var(--third);
   transform-origin: 50% 50% 0px;
-  border-radius: 50px;
+  border-radius: 20px;
   margin: 2%;
   padding: 5%;
-  line-height: 18px;
+  line-height: 25px;
 }
 .container > div:nth-child(odd) {
   background: var(--secondary);
   box-shadow: rgba(10, 83, 179, 0.25) 0px 50px 100px -20px, rgba(24, 33, 151, 0.3) 0px 30px 60px -30px;
   transform-origin: 50% 50% 0px;
-  border-radius: 50px;
+  border-radius: 20px;
   margin: 2%;
   padding: 5%;
-  line-height: 18px;
+  line-height: 25px;
 }
 
 .pen {
