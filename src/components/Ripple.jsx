@@ -30,11 +30,6 @@ function Ripple() {
  
     <div class="front">
       <div class="stone"></div>
-      <div class="grass"></div>
-      <div class="grass grass-1"></div>
-   
-      <div class="reed reed-1"></div>
-      
     </div>
   </div>
   </div>
