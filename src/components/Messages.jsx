@@ -1,6 +1,8 @@
 import axios from "axios";
 import React from "react";
 import "./Messages.css";
+import "./Collapsible.css";
+ 
 import { Link, withRouter } from "react-router-dom";
 
 import Collapsible from "react-collapsible";
@@ -22,11 +24,12 @@ function Messages(props) {
     let messageLength = messageObj.messages;
     if (messageLength.length > 30)
       messageLength = messageLength.substring(0, 30) + "...";
-
+    
     return (
-      <div>
-        <Collapsible trigger={messageLength}>
-          <img width="30px" src={messageObj.mood_icon_url} />
+      <div class="CustomTriggerCSS">
+        <Collapsible  trigger={messageLength}>
+          {/* <img width="30px" src={messageObj.mood_icon_url} /> */}
+          <img width="30px" src="/img/009-sad-1.png"/>
           <span> {messageObj.messages}</span>
         </Collapsible>
       </div>
@@ -35,7 +38,7 @@ function Messages(props) {
 
   return (
     <div className="Messages">
-      <div class="container">{notes}</div>
+      <div class="container ">{notes}</div>
       <div>
         <Link to="/Journal" class="container pen fas fa-pen-alt"></Link>
       </div>
