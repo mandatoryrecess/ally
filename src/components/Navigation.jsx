@@ -9,10 +9,9 @@ function Navigation(props) {
       <div class="container">
         <Link
           className="return-home"
-          class="fas fa-arrow-circle-left"
           to="/"
           style={{ border:'none' }}
-        ></Link>
+        ><img alt="" width="30px" src="/img/012-house.png"/></Link>
       </div>
       {/* </nav> */}
     </div>

@@ -16,6 +16,7 @@
   width: 100%;
   justify-content: center;
   flex-direction: column;
+  margin-bottom: 15%;
 }
 
 .return-home:hover {

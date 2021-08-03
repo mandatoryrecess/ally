@@ -1,17 +1,14 @@
 import React from "react";
-import { TextField, IconButton } from "@material-ui/core";
-import CloudUploadIcon from "@material-ui/icons/CloudUpload";
-import AlbumIcon from "@material-ui/icons/Album";
+import { TextField, IconButton, Button } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import "./Journal.css";
 
 const useStyles = makeStyles({
   root: {
-    background: "linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)",
-    boxShadow: "0 3px 5px 2px rgba(255, 105, 135, .3)",
+    background: "rgb(206, 109, 109)",
     color: "white",
-    height: "35px",
-    width: "35px",
+    height: "30px",
+    width: "30px",
     margin: "2%",
   },
 });
@@ -20,7 +17,7 @@ export default function Journal(props) {
   const classes = useStyles();
 
   function MouseOver(event) {
-    event.target.style.background = "linear-gradient(45deg, #FE6B8B 50%, #FF8E53 100%)";
+    event.target.style.background = "white";
   }
 
   return (
@@ -36,60 +33,53 @@ export default function Journal(props) {
           />
 
           <div class="mood-bar">
-
             {/* will be same as selecting an interviewer in scheduler */}
             <IconButton
               className={classes.root}
               color="secondary"
               aria-label="test"
-              onMouseOver={MouseOver}
             >
-              <AlbumIcon />
+              <img alt="" width="30px" src="/img/009-sad-1.png" />
             </IconButton>
 
             <IconButton
               className={classes.root}
               color="secondary"
               aria-label="test"
-              onMouseOver={MouseOver}
             >
-              <AlbumIcon />
+              <img alt="" width="30px" src="/img/001-yawn.png" />
             </IconButton>
 
             <IconButton
               className={classes.root}
               color="secondary"
               aria-label="test"
-              onMouseOver={MouseOver}
             >
-              <AlbumIcon />
+              <img alt="" width="30px" src="/img/013-meh.png" />
             </IconButton>
 
             <IconButton
               className={classes.root}
               color="secondary"
               aria-label="test"
-              onMouseOver={MouseOver}
             >
-              <AlbumIcon />
+              <img alt="" width="30px" src="/img/016-happy-2.png" />
             </IconButton>
 
             <IconButton
               className={classes.root}
               color="secondary"
               aria-label="test"
-              onMouseOver={MouseOver}
             >
-              <AlbumIcon />
+              <img alt="" width="30px" src="/img/019-crying.png" />
             </IconButton>
           </div>
 
-          <IconButton color="secondary" aria-label="cloud-upload-icon">
-            <CloudUploadIcon />
-          </IconButton>
-        </form>
 
-        {/* add mood icons */}
+          <Button className="upload" variant="contained" color="default" disableElevation>
+            <img alt="" width="30px" src="/img/042-email.png" />
+          </Button>
+        </form>
       </div>
     </div>
   );
