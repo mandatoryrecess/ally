@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { TextField, IconButton, Button } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import "./Journal.css";
@@ -15,24 +15,38 @@ const useStyles = makeStyles({
 
 export default function Journal(props) {
   const classes = useStyles();
+  const [mood, setMood] = useState(props.mood || null);
+  const [message, setMessage] = useState(props.message || null);
+  const [error, setError] = useState("");
 
   function MouseOver(event) {
     event.target.style.background = "white";
   }
 
+  function validate() {
+    if (message === "") {
+      setError("Student name cannot be blank");
+      return;
+    }
+
+    setError("");
+    props.onSave(mood, message);
+  }
+
   return (
     <div class="container">
       <div class="uploading-thoughts">
-        <form className="your-thought" noValidate autoComplete="off">
+        <form className="your-thought" noValidate autoComplete="off" onSubmit={(event) => event.preventDefault()}>
           <TextField
             className="journal"
+            onChange={(event) => setMessage(event.target.value)}
             id="outlined-basic"
             variant="outlined"
             multiline
             maxRows={10}
           />
 
-          <div class="mood-bar">
+          <div class="mood-bar" onChange={setMood}>
             {/* will be same as selecting an interviewer in scheduler */}
             <IconButton
               className={classes.root}
@@ -76,8 +90,7 @@ export default function Journal(props) {
           </div>
 
           <Button
-            onClick={props.onClick}
-            selected={props.value}
+            onClick={() => validate()}
             className="upload"
             variant="contained"
             color="default"
