@@ -79,8 +79,6 @@ export default function Journal(props) {
             onClick={props.onClick}
             selected={props.value}
             className="upload"
-            variant="contained"
-            color="default"
             disableElevation
           >
             <img alt="" width="30px" src="/img/042-email.png" />

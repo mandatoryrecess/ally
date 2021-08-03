@@ -5,7 +5,6 @@ import './Navigation.css';
 function Navigation(props) {
   return (
     <div className="navigation">
-      {/* <nav class="navbar navbar-expand"> */}
       <div class="container">
         <Link
           className="return-home"
@@ -13,7 +12,6 @@ function Navigation(props) {
           style={{ border:'none' }}
         ><img alt="" width="30px" src="/img/012-house.png"/></Link>
       </div>
-      {/* </nav> */}
     </div>
   );
 }

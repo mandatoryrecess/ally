@@ -32,7 +32,7 @@ function Messages(props) {
 
           <span>
             {" "}
-            <img alt="" width="30px" src="/img/009-sad-1.png" /> <br></br>
+            <img alt="" width="30px" src={`${messageObj.mood_icon_url}`} /> <br></br>
             {messageObj.messages}
           </span>
         </Collapsible>
