@@ -1,8 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { TextField, IconButton, Button } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import "./Journal.css";
 import axios from "axios";
+import { Redirect } from "react-router";
 
 const useStyles = makeStyles({
   root: {
@@ -14,9 +15,7 @@ const useStyles = makeStyles({
   },
 });
 
-export default function Journal(props) {
-  const [emoji, setEmoji] = React.useState("https://i.imgur.com/WVNoRDr.png");
-  // const [post, setPost] = React.useState(null);
+export default function Journal() {
 
   const classes = useStyles();
 
@@ -24,61 +23,39 @@ export default function Journal(props) {
     event.target.style.background = "white";
   }
 
-  // useEffect(() => {
-  //   const messages = {messages: "HELLO", mood_icon_url: "https://i.imgur.com/2G6Cc0q.png"}
-  //   axios.post('/messages', {messages})
-  //   .then(function(response){
-  //     console.log(response)
-  //   })
-  //   .catch(function (error) {
-  //     console.log(error);
-  //   })
-  // }, []);
+  const[messageState, setmessageState] = useState('');
+  const [emoji, setEmoji] = useState("https://i.imgur.com/WVNoRDr.png");
 
-  const messageState = {
-    messages: "",
-    emoji: "",
-  };
 
-  const[state, setState] = React.useState(messageState);
-  
-  
-
-  const handleSubmit = (e) => {
+  function handleMessage(e){
     e.preventDefault();
-    const data = {
-      messages: this.state.messages,
-      mood_icon_url: this.state.emoji,
-    };
+    setmessageState(e.target.value)  
+  };
+
+  function handleSubmit(e){ 
+     const data = {
+      messages: messageState,
+      mood_icon_url: emoji,
+    }
+    console.log("-------", data)
     axios
-      .post("/messages", data)
+      .post("/Journal", data)
       .then((res) => console.log(res))
+      .then(Redirect("/messages"))
       .catch((err) => console.log(err));
-  };
-
-  const onMessageHandleChange = (event) => {
-    this.setState({
-      messages: event.target.value,
-    });
-  };
-
- const onEmojiHandleChange = (event) => {
-    this.setState({
-      mood_icon_url: "https://i.imgur.com/WVNoRDr.png",
-    });
   };
 
   return (
     <div class="journal">
       <div class="uploading-thoughts">
         <form
+        onSubmit={handleSubmit}
           className="your-thought"
           noValidate
           autoComplete="off"
         >
           <TextField
-            value={this.state.messages}
-            onChange={this.onMessageHandleChange}
+            onChange={handleMessage}
             className="journal"
             id="outlined-basic"
             variant="outlined"
@@ -88,8 +65,7 @@ export default function Journal(props) {
 
           <div class="mood-bar">
             <IconButton
-              value={this.state.emoji}
-              onChange={this.onEmojiHandleChange}
+              onClick={() => setEmoji("https://imgur.com/tdJnqXF")}
               className={classes.root}
               color="secondary"
               aria-label="test"
@@ -98,7 +74,7 @@ export default function Journal(props) {
             </IconButton>
 
             <IconButton
-              onClick={setEmoji}
+              onClick={() => setEmoji("https://imgur.com/2G6Cc0q")}
               className={classes.root}
               color="secondary"
               aria-label="test"
@@ -107,7 +83,7 @@ export default function Journal(props) {
             </IconButton>
 
             <IconButton
-              onClick={setEmoji}
+              onClick={() => setEmoji("https://imgur.com/tdJnqXF")}
               className={classes.root}
               color="secondary"
               aria-label="test"
@@ -116,7 +92,7 @@ export default function Journal(props) {
             </IconButton>
 
             <IconButton
-              onClick={setEmoji}
+              onClick={() => setEmoji("https://imgur.com/WVNoRDr")}
               className={classes.root}
               color="secondary"
               aria-label="test"
@@ -125,7 +101,7 @@ export default function Journal(props) {
             </IconButton>
 
             <IconButton
-              onClick={setEmoji}
+              onClick={() => setEmoji("https://imgur.com/efuce6E")}
               className={classes.root}
               color="secondary"
               aria-label="test"
