@@ -1,12 +1,11 @@
-
-.container {
+/* .container {
   align-items: center;
   display: flex;
   height: 100%;
   width: 100%;
   justify-content: center;
   flex-direction: column;
-}
+} */
 
 :root {
   --v1: #919dc6;

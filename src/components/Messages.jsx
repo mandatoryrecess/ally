@@ -21,7 +21,8 @@ function Messages(props) {
   if (!post) return null;
 
   const notes = post.map((messageObj) => {
-    let imageURL = messageObj.mood_image_url;
+    let imageURL = messageObj["mood_icon_url"];
+
     let messageLength = messageObj.messages;
     if (messageLength.length > 30)
       messageLength = messageLength.substring(0, 30) + "...";
@@ -29,7 +30,7 @@ function Messages(props) {
     return (
       <div class="CustomTriggerCSS">
         <Collapsible trigger={messageLength}>
-          {/* <img width="30px" src={messageObj.mood_icon_url} /> */}
+          <img alt="" width="30px" src={imageURL} />
 
           <span>
             {" "}
