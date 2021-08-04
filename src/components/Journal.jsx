@@ -3,7 +3,7 @@ import { TextField, IconButton, Button } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import "./Journal.css";
 import axios from "axios";
-import { Redirect } from "react-router";
+import { Link, useHistory } from "react-router-dom";
 
 const useStyles = makeStyles({
   root: {
@@ -16,7 +16,7 @@ const useStyles = makeStyles({
 });
 
 export default function Journal() {
-
+  const history = useHistory();
   const classes = useStyles();
 
   function MouseOver(event) {
@@ -41,7 +41,7 @@ export default function Journal() {
     axios
       .post("/Journal", data)
       .then((res) => console.log(res))
-      .then(Redirect("/messages"))
+      .then(history.push('/ '))
       .catch((err) => console.log(err));
   };
 
