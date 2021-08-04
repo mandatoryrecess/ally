@@ -1,11 +1,21 @@
+
+.container {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  flex-direction: column;
+}
+
 :root {
   --v1: #919dc6;
   --v2: #656fcc;
-  --v3: #061281;
+  --v3: #222d8a;
   --transparentv3: #31559900;
   --v4: #091268;
   --s1: #98c1fe;
-  --s2: #0f1972d0;
+  --s2: #232974d0;
   --cloud: #98f7fe;
 }
 .landscape:after, .landscape:before, .landscape *, .landscape *:after, .landscape *:before {
@@ -89,12 +99,12 @@
 .sun {
   background: white;
   border-radius: 50%;
-  width: 20vmin;
-  height: 20vmin;
+  width: 15vmin;
+  height: 15vmin;
   left: calc(60% - 10vmin);
   top: 100%;
   transform: translate3d(0, 0, 0);
-  animation: rise 20s infinite;
+  animation: rise 50s infinite;
   box-shadow: 0 0 10px white;
 }
 
@@ -217,37 +227,37 @@
 }
 .light-1 {
   top: calc(50% + 2vmin);
-  animation-delay: 0.5s;
+  animation-delay: 5.5s;
 }
 .light-2 {
   top: calc(50% + 3vmin);
   width: 18vmin;
-  animation-delay: 1s;
+  animation-delay: 3.5s;
 }
 .light-3 {
   top: calc(50% + 4vmin);
   width: 18vmin;
-  animation-delay: 1.5s;
+  animation-delay: 4s;
 }
 .light-4 {
   top: calc(50% + 5vmin);
   width: 16vmin;
-  animation-delay: 2s;
+  animation-delay: 5.5s;
 }
 .light-5 {
   top: calc(50% + 8vmin);
   width: 14vmin;
-  animation-delay: 2.5s;
+  animation-delay: 6s;
 }
 .light-6 {
   top: calc(50% + 9vmin);
   width: 10vmin;
-  animation-delay: 3s;
+  animation-delay: 6.5s;
 }
 .light-7 {
   top: calc(50% + 7vmin);
   width: 12vmin;
-  animation-delay: 3.5s;
+  animation-delay: 8s;
 }
 .splash {
   width: 8vmin;

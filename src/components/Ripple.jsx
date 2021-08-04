@@ -23,10 +23,8 @@ function Ripple() {
     <div class="light light-5"></div>
     <div class="light light-6"></div>
     <div class="light light-7"></div>
+    
     <div class="water"></div>
-
-    <div class="splash splash-4 delay-4"></div>
-     <div class="splash splash-stone delay-3"></div>
  
     <div class="front">
       <div class="stone"></div>
