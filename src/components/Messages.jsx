@@ -26,19 +26,19 @@ function Messages(props) {
     if (messageLength.length > 30)
       messageLength = messageLength.substring(0, 30) + "...";
 
-    return (
-      <div class="CustomTriggerCSS">
-        <Collapsible trigger={messageLength}>
-          <img width="30px" src={imageURL} />
-          <span>
-            {" "}
-            <img alt="" width="30px" src={'imageURL'} /> <br></br>
-            {messageObj.messages}
-          </span>
-        </Collapsible>
-      </div>
-    );
-  });
+      return (
+        <div class="CustomTriggerCSS">
+          <Collapsible trigger={messageLength}>
+            <img width="30px" src={imageURL} />
+            <span>
+              {" "}
+              <img alt="" width="30px" src={'imageURL'} /> <br></br>
+              {messageObj.messages}
+            </span>
+          </Collapsible>
+        </div>
+      );
+    });
 
   return (
     <div className="messages">
