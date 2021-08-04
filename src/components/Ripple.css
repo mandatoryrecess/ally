@@ -28,8 +28,8 @@
   right: 0;
 }
 .landscape {
-  height: 80vmin;
-  width: 50vmin;
+  height: 110vmin;
+  width: 80vmin;
   background-image: linear-gradient(var(--v1), var(--s1), var(--v1));
   position: relative;
   z-index: 1;
@@ -71,7 +71,7 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background: linear-gradient(#fea79855, var(--v2));
+  background: linear-gradient(#98bcfe55, var(--v2));
   overflow: hidden;
   box-shadow: inset 0 1px 4px -3px white;
 }
