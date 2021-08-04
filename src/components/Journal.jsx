@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import { TextField, IconButton, Button } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import "./Journal.css";
+import axios from "axios";
+import { Link, useHistory } from "react-router-dom";
 
 const useStyles = makeStyles({
   root: {
@@ -13,18 +15,47 @@ const useStyles = makeStyles({
   },
 });
 
-export default function Journal(props) {
+export default function Journal() {
+  const history = useHistory();
   const classes = useStyles();
 
   function MouseOver(event) {
     event.target.style.background = "white";
   }
 
+  const[messageState, setmessageState] = useState('');
+  const [emoji, setEmoji] = useState("https://i.imgur.com/WVNoRDr.png");
+
+
+  function handleMessage(e){
+    e.preventDefault();
+    setmessageState(e.target.value)  
+  };
+
+  function handleSubmit(e){ 
+     const data = {
+      messages: messageState,
+      mood_icon_url: emoji,
+    }
+    console.log("-------", data)
+    axios
+      .post("/Journal", data)
+      .then((res) => console.log(res))
+      .then(history.push('/ '))
+      .catch((err) => console.log(err));
+  };
+
   return (
     <div class="journal">
       <div class="uploading-thoughts">
-        <form className="your-thought" noValidate autoComplete="off">
+        <form
+        onSubmit={handleSubmit}
+          className="your-thought"
+          noValidate
+          autoComplete="off"
+        >
           <TextField
+            onChange={handleMessage}
             className="journal"
             id="outlined-basic"
             variant="outlined"
@@ -33,8 +64,8 @@ export default function Journal(props) {
           />
 
           <div class="mood-bar">
-            {/* will be same as selecting an interviewer in scheduler */}
             <IconButton
+              onClick={() => setEmoji("https://imgur.com/tdJnqXF")}
               className={classes.root}
               color="secondary"
               aria-label="test"
@@ -43,6 +74,7 @@ export default function Journal(props) {
             </IconButton>
 
             <IconButton
+              onClick={() => setEmoji("https://imgur.com/2G6Cc0q")}
               className={classes.root}
               color="secondary"
               aria-label="test"
@@ -51,6 +83,7 @@ export default function Journal(props) {
             </IconButton>
 
             <IconButton
+              onClick={() => setEmoji("https://imgur.com/tdJnqXF")}
               className={classes.root}
               color="secondary"
               aria-label="test"
@@ -59,6 +92,7 @@ export default function Journal(props) {
             </IconButton>
 
             <IconButton
+              onClick={() => setEmoji("https://imgur.com/WVNoRDr")}
               className={classes.root}
               color="secondary"
               aria-label="test"
@@ -67,6 +101,7 @@ export default function Journal(props) {
             </IconButton>
 
             <IconButton
+              onClick={() => setEmoji("https://imgur.com/efuce6E")}
               className={classes.root}
               color="secondary"
               aria-label="test"
@@ -76,8 +111,7 @@ export default function Journal(props) {
           </div>
 
           <Button
-            onClick={props.onClick}
-            selected={props.value}
+            onClick={handleSubmit}
             className="upload"
             disableElevation
           >
