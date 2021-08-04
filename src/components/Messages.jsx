@@ -29,10 +29,9 @@ function Messages(props) {
     return (
       <div class="CustomTriggerCSS">
         <Collapsible trigger={messageLength}>
-          <img width="30px" src={imageURL} />
           <span>
             {" "}
-            <img alt="" width="30px" src={'imageURL'} /> <br></br>
+            <img alt="" width="30px" src={imageURL} /> <br></br>
             {messageObj.messages}
           </span>
         </Collapsible>
