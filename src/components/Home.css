@@ -1,10 +1,11 @@
 /* blob shape */
 :root {
   --background: #fff;
-  --primary: #acd3f3;
+  --primary: #c8e6ff;
   --secondary: #79bfee;
   --third: #5e86cf;
   --fourth:#28649c;
+  --fifth: #13497c;
 }
 
 * {

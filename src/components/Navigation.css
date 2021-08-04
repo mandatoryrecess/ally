@@ -10,6 +10,7 @@
   justify-content: center;
   flex-direction: column;
   margin-bottom: 15%;
+  background-color: inherit;
 }
 
 .return-home:hover {

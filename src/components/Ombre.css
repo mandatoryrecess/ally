@@ -29,7 +29,7 @@ body {
   /* font-family: 'Roboto', sans-serif; */
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   background: #f0f0f0;
 }
 
@@ -47,7 +47,6 @@ body {
   pointer-events: auto;
   transform-origin: 50% 50% 0px;
   border-radius: 5px;
-  color: white;
   line-height: 90px;
   font-size: 14.5px;
   background: lightblue;
@@ -59,13 +58,22 @@ body {
 
 .content > div:nth-child(1) {
   background: var(--primary);
+  color: var(--primary);
 }
 .content > div:nth-child(2) {
   background: var(--secondary);
+  color: var(--secondary);
 }
 .content > div:nth-child(3) {
   background: var(--third);
+  color: var(--third);
 }
 .content > div:nth-child(4) {
   background: var(--fourth);
+  color: var(--fourth);
+}
+
+.content > div:nth-child(5) {
+  background: var(--fifth);
+  color: var(--fifth);
 }

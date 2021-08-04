@@ -22,7 +22,7 @@ const fn = (order, down, originalIndex, curIndex, y) => (index) =>
         immediate: false,
       };
 
-function Ombre({ items = "it will be okay".split(" ") }) {
+function Ombre({ items = "trust me everything will pass".split(" ") }) {
   const order = useRef(items.map((_, index) => index));
 
   const [springs, setSprings] = useSprings(items.length, fn(order.current));

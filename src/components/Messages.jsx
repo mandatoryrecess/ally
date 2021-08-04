@@ -21,6 +21,7 @@ function Messages(props) {
   if (!post) return null;
 
   const notes = post.map((messageObj) => {
+    let imageURL = messageObj.mood_image_url;
     let messageLength = messageObj.messages;
     if (messageLength.length > 30)
       messageLength = messageLength.substring(0, 30) + "...";
@@ -32,7 +33,7 @@ function Messages(props) {
 
           <span>
             {" "}
-            <img alt="" width="30px" src={`${messageObj.mood_icon_url}`} /> <br></br>
+            <img alt="" width="30px" src={imageURL} /> <br></br>
             {messageObj.messages}
           </span>
         </Collapsible>

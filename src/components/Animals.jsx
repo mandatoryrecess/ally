@@ -1,5 +1,6 @@
 import axios from "axios";
 import React from "react";
+import './Animals.css';
 
 const api_call = "/animals";
 
@@ -23,9 +24,8 @@ function Animals(props) {
  
   return (
     <div className="Animals">
-      <div class="container" onClick={nextAnimal} >
-        <h1 class="font-weight-light">Animals</h1>
-        <img width="400px" src={`${animal[currentAnimalIndex].image_url}`} /> 
+      <div class="anipics" onClick={nextAnimal} >
+        <img class="apics" alt="cute-animals" width="275px" src={`${animal[currentAnimalIndex].image_url}`} /> 
       </div>
     </div>
   );
