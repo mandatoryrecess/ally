@@ -35,7 +35,7 @@ export default function Journal() {
     }
     console.log("-------", data)
     axios
-      .post("/messages", data)
+      .post("/api/messages", data)
       .then((res) => console.log(res))
       .then(history.push("/messages"))
       .catch((err) => console.log(err));

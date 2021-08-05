@@ -7,7 +7,7 @@ import { Link, withRouter } from "react-router-dom";
 
 import Collapsible from "react-collapsible";
 
-const api_call = "/messages";
+const api_call = "/api/messages";
 
 function Messages(props) {
   const [post, setPost] = React.useState(null);

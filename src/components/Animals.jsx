@@ -2,7 +2,7 @@ import axios from "axios";
 import React from "react";
 import './Animals.css';
 
-const api_call = "/animals";
+const api_call = "/api/animals";
 
 function Animals(props) {
   const [animal, setAnimal] = React.useState(null);
