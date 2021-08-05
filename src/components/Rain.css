@@ -3,17 +3,29 @@ body {
     margin: 0;
     padding: 0;
 }
+.audio {
+  z-index: 0;
+  opacity: 0.6;
+}
 
 section {
     position: relative;
-    height: 110vmin;
-    width: 80vmin;
+    height: 500px;
+    width: 325px;
      background-image: url( 
       https://i.imgur.com/2iV0c0O.png);
     background-size: cover;
     background-position: center;
     animation: color-change 15s linear infinite; 
     animation-delay: 1s;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 325px;
+    border-radius: 20px;
+    box-shadow: 0 25px 40px -20px #383838;
 }
 
 section:before {
@@ -58,9 +70,9 @@ section:before {
       background-color:#585858
     }
     60% {
-      background-color:#444444
+      background-color:#9d9e9e
     }
     100% {
-      background-color:#313131
+      background-color:#bec0c2
     }
 } 
