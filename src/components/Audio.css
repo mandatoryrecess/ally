@@ -4,7 +4,7 @@
 }
 
 .campfire {
-  background: linear-gradient(90deg, rgba(228,83,1,1) 0%, rgba(231,120,4,1) 40%, rgba(255,186,0,1) 100%);
+  background: linear-gradient(45deg, rgba(228,83,1,1) 0%, rgba(231,120,4,1) 40%, rgba(255,186,0,1) 100%);
   padding: 20px;
   display: flex;
   justify-content: center;
