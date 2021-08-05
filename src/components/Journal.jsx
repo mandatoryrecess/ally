@@ -39,9 +39,9 @@ export default function Journal() {
     }
     console.log("-------", data)
     axios
-      .post("/Journal", data)
+      .post("/messages", data)
       .then((res) => console.log(res))
-      .then(history.push('/ '))
+      .then(history.push("/messages"))
       .catch((err) => console.log(err));
   };
 
@@ -65,7 +65,7 @@ export default function Journal() {
 
           <div class="mood-bar">
             <IconButton
-              onClick={() => setEmoji("https://imgur.com/tdJnqXF")}
+              onClick={() => setEmoji("https://i.imgur.com/tdJnqXF.png")}
               className={classes.root}
               color="secondary"
               aria-label="test"
@@ -74,7 +74,7 @@ export default function Journal() {
             </IconButton>
 
             <IconButton
-              onClick={() => setEmoji("https://imgur.com/2G6Cc0q")}
+              onClick={() => setEmoji("https://i.imgur.com/2G6Cc0q.png")}
               className={classes.root}
               color="secondary"
               aria-label="test"
@@ -83,7 +83,7 @@ export default function Journal() {
             </IconButton>
 
             <IconButton
-              onClick={() => setEmoji("https://imgur.com/tdJnqXF")}
+              onClick={() => setEmoji("https://i.imgur.com/tdJnqXF.png")}
               className={classes.root}
               color="secondary"
               aria-label="test"
@@ -92,7 +92,7 @@ export default function Journal() {
             </IconButton>
 
             <IconButton
-              onClick={() => setEmoji("https://imgur.com/WVNoRDr")}
+              onClick={() => setEmoji("https://i.imgur.com/WVNoRDr.png")}
               className={classes.root}
               color="secondary"
               aria-label="test"
@@ -101,7 +101,7 @@ export default function Journal() {
             </IconButton>
 
             <IconButton
-              onClick={() => setEmoji("https://imgur.com/efuce6E")}
+              onClick={() => setEmoji("https://i.imgur.com/efuce6E.png")}
               className={classes.root}
               color="secondary"
               aria-label="test"
