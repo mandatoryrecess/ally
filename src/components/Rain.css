@@ -16,7 +16,7 @@ section {
       https://i.imgur.com/2iV0c0O.png);
     background-size: cover;
     background-position: center;
-    animation: color-change 30s linear infinite; 
+    animation: color-change 34s linear infinite; 
     animation-delay: 5s;
     padding: 20px;
     display: flex;
@@ -55,13 +55,13 @@ section:before {
 
  @keyframes color-change {
    0% {
-     background-color: #e3e3e4;
+     background-color: #F0F5FC;
    }
     10% {
-      background-color:#bec0c2
+      background-color:#CFE0FC
     }
     20% {
-      background-color: #9d9e9e
+      background-color: #9e9e9e
     }
     30% {
       background-color: #7D7D7A

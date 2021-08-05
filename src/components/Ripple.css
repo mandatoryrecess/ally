@@ -27,13 +27,14 @@
   right: 0;
 }
 .landscape {
-  height: 110vmin;
-  width: 80vmin;
+  height: 500px;
+  width: 325px;
   background-image: linear-gradient(var(--v1), var(--s1), var(--v1));
   position: relative;
   z-index: 1;
   overflow: hidden;
   border-radius: 30px;
+  box-shadow: 0 25px 40px -20px #071d80;
 }
 
 .cloud {
