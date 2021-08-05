@@ -97,7 +97,7 @@
   perspective: 1000px;
 }
 
-#dots-room {
+#scroll-room {
   background: var(--secondary);
   margin: 1%;
   animation:

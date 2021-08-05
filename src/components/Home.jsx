@@ -44,11 +44,11 @@ function Home(props) {
         </Link>
 
         <Link
-          id="dots-room"
+          id="scroll-room"
           class={`nav-item  ${
-            props.location.pathname === "/dots" ? "active" : ""
+            props.location.pathname === "/scroll" ? "active" : ""
           }`}
-          to="/dots"
+          to="/scroll"
         >
         </Link>
 
