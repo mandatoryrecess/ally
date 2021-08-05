@@ -1,7 +1,8 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import { Navigation, Home, Ripple, Messages, Animals, Dots, Ombre, Timer } from "./components";
+import { Navigation, Home, Ripple, Messages, Animals, Dots, Ombre } from "./components";
 import Journal from "./components/Journal";
+import Audio from "./components/Audio"
 
 function App() {
   return (
@@ -16,7 +17,7 @@ function App() {
           <Route path="/dots" exact component={() => <Dots />} />
           <Route path="/ombre" exact component={() => <Ombre />} />
           <Route path="/journal" exact component={() => <Journal />} />
-          <Route path="/timer" exact component={() => <Timer />} />
+          <Route path="/audio" exact component={() => <Audio />} />
         </Switch>
       </Router>
     </div>

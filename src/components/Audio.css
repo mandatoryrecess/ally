@@ -1,0 +1,16 @@
+.audio {
+  z-index: 0;
+  opacity: 0.6;
+}
+
+.campfire {
+  background: linear-gradient(90deg, rgba(228,83,1,1) 0%, rgba(231,120,4,1) 40%, rgba(255,186,0,1) 100%);
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  width: 325px;
+  border-radius: 20px;
+  box-shadow: 0 25px 40px -20px #e46f02;
+}
