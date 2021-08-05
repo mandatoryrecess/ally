@@ -6,9 +6,6 @@ export { default as Messages } from "./Messages";
 export { default as Animals } from "./Animals";
 export { default as Dots } from "./Dots";
 export { default as Ombre } from "./Ombre";
-<<<<<<< HEAD
 export { default as Audio } from "./Audio";
-=======
 export { default as Rain } from "./Rain";
->>>>>>> rain
 

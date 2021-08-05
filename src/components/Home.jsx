@@ -64,15 +64,18 @@ function Home(props) {
         <Link
           id="thought-space"
           class={`nav-item  ${
-<<<<<<< HEAD
             props.location.pathname === "/audio" ? "active" : ""
           }`}
           to="/audio"
-=======
+        >
+        </Link>
+
+        <Link
+          id="thought-space"
+          class={`nav-item  ${
             props.location.pathname === "/rain" ? "active" : ""
           }`}
           to="/rain"
->>>>>>> rain
         >
         </Link>
 
