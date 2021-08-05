@@ -22,7 +22,7 @@ function Home(props) {
           }`}
           to="/ripple"
         >
-          <span class="sr-only">(current)</span>
+          
         </Link>
 
         <Link

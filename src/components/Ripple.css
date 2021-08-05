@@ -1,11 +1,11 @@
-/* .container {
+.sunset {
   align-items: center;
   display: flex;
   height: 100%;
   width: 100%;
   justify-content: center;
   flex-direction: column;
-} */
+}
 
 :root {
   --v1: #919dc6;
@@ -33,6 +33,7 @@
   position: relative;
   z-index: 1;
   overflow: hidden;
+  border-radius: 30px;
 }
 
 .cloud {

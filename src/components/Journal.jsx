@@ -3,7 +3,7 @@ import { TextField, IconButton, Button } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import "./Journal.css";
 import axios from "axios";
-import { Link, useHistory } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 
 const useStyles = makeStyles({
   root: {
@@ -18,10 +18,6 @@ const useStyles = makeStyles({
 export default function Journal() {
   const history = useHistory();
   const classes = useStyles();
-
-  function MouseOver(event) {
-    event.target.style.background = "white";
-  }
 
   const[messageState, setmessageState] = useState('');
   const [emoji, setEmoji] = useState("https://i.imgur.com/WVNoRDr.png");
