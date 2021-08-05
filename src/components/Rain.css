@@ -16,8 +16,8 @@ section {
       https://i.imgur.com/2iV0c0O.png);
     background-size: cover;
     background-position: center;
-    animation: color-change 15s linear infinite; 
-    animation-delay: 1s;
+    animation: color-change 30s linear infinite; 
+    animation-delay: 5s;
     padding: 20px;
     display: flex;
     justify-content: center;
