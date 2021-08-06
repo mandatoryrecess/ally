@@ -1,14 +1,20 @@
 import React from "react";
-import * as d3 from "d3";
 import "./Dots.css";
 import Navigation from "./Navigation";
+import Canvas from './Canvas'
 
 function Dots() {
+
+
+
+
   return (
     <div className="Dots">
       <Navigation />
 
-      <div class="container"></div>
+      <div class="container">
+
+      </div>
     </div>
   );
 }
