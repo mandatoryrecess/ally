@@ -1,6 +1,5 @@
-import React, { useRef } from 'react'
-import { render } from "react-dom";
-import { Parallax, ParallaxLayer, IParallax, Background } from 'react-parallax'
+import React from 'react'
+import { ParallaxProvider, Parallax } from 'react-scroll-parallax';
 import "./Galaxy.css";
 
 
@@ -11,35 +10,14 @@ import "./Galaxy.css";
     const cartoonStarCluster = "https://i.imgur.com/0xoT3Ky.png";
     const rainbowStar = "https://i.imgur.com/qeOmPc0.png";
 
-    const insideStyles = {
-      background: "white",
-      padding: 20,
-      position: "absolute",
-      top: "50%",
-      left: "50%",
-      transform: "translate(-50%,-50%)",
-      // overflow: "scroll"
-    };
-
-    console.log("Parallax", Parallax)
-  
-
     return(
-      <div className="galaxy">
-      <Parallax bgImage={ milkySky } strength={500}>
-        <div style={{ height: 500 }}>
-          <div style={insideStyles}>HTML inside the parallax
-          </div>
-        </div>
-      </Parallax>
-      <h2>| | |</h2>
-      <Parallax bgImage={ darkSky } strength={-100}>
-      <div style={{ height: 500 }}>
-        <div style={insideStyles}>Reverse direction</div>
+      <ParallaxProvider>
+      <div class="galaxy">
+        <h1 class="h1">Galaxy</h1>
+        <h1 class="h1">Galaxy</h1>
+        <h1 class="h1">Galaxy</h1>
       </div>
-    </Parallax>
-    <h2>| | |</h2>
-      </div>
+      </ParallaxProvider>
     );
 
   };

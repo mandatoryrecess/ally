@@ -26,6 +26,7 @@
     "react-parallax": "^3.3.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
+    "react-scroll-parallax": "^2.4.0",
     "react-spring": "^9.2.4",
     "react-with-gesture": "^4.0.8",
     "sass": "^1.37.2",
