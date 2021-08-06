@@ -42,6 +42,7 @@ function Messages(props) {
 
   return (
     <div className="messages">
+       <Navigation />
       {/* <Link to="/journal" class="pen">
         <img type="image/png" width="30px" alt="" src="/img/006-compose.png" />
       </Link> */}
