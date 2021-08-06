@@ -41,10 +41,20 @@ function Messages(props) {
 
   return (
     <div className="messages">
-      <Link to="/journal" class="pen">
+      {/* <Link to="/journal" class="pen">
         <img type="image/png" width="30px" alt="" src="/img/006-compose.png" />
-      </Link>
-      <div class="container">{notes}</div>
+      </Link> */}
+      <div class="container">
+        <Link to="/journal" class="pen">
+          <img
+            type="image/png"
+            width="30px"
+            alt=""
+            src="/img/006-compose.png"
+          />
+        </Link>
+        {notes}
+      </div>
     </div>
   );
 }

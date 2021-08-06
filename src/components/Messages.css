@@ -1,11 +1,11 @@
 .messages {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  height: 600px;
 }
 
 .container {
   align-items: center;
+  justify-content: start;
+  flex-direction: column;
   display: flex;
   height: 100%;
   width: 95%;
@@ -16,10 +16,10 @@
   font-weight: 400;
   text-align: center;
   line-height: 18px;
-  overflow:scroll;
+  overflow-y: scroll;
 }
 
-.container > div:nth-child(even) {
+.container>div:nth-child(even) {
   background: var(--third);
   transform-origin: 50% 50% 0px;
   border-radius: 20px;
@@ -27,7 +27,8 @@
   padding: 5%;
   line-height: 25px;
 }
-.container > div:nth-child(odd) {
+
+.container>div:nth-child(odd) {
   background: var(--secondary);
   box-shadow: rgba(10, 83, 179, 0.25) 0px 50px 100px -20px, rgba(24, 33, 151, 0.3) 0px 30px 60px -30px;
   transform-origin: 50% 50% 0px;
@@ -40,7 +41,7 @@
 .pen {
   border: 0px;
   font-size: 2rem;
-  align-self:center;
+  align-self: center;
 }
 
 
@@ -50,7 +51,6 @@
   -o-transition: all .3s linear;
   -moz-transition: all .3s linear;
   text-decoration: none;
-  border-bottom:none;
+  border-bottom: none;
   color: var(--fourth);
 }
-

@@ -5,13 +5,11 @@ import './Navigation.css';
 function Navigation(props) {
   return (
     <div className="navigation">
-      <div class="container">
-        <Link
-          className="return-home"
-          to="/"
-          style={{ border:'none' }}
-        ><img alt="" width="30px" src="/img/012-house.png"/></Link>
-      </div>
+      <Link
+        className="return-home"
+        to="/"
+        style={{ border:'none' }}
+      ><img alt="" width="30px" src="/img/012-house.png"/></Link>
     </div>
   );
 }

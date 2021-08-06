@@ -2,15 +2,19 @@
   border: none;
 }
 
-.container {
+.navigation {
   align-items: center;
-  display: flex;
+  /* display: flex;
   height: 100%;
-  width: 100%;
-  justify-content: center;
-  flex-direction: column;
+  width: 100%; */
+  margin-left: 10%;
+  margin-top: -15%;
+  /* justify-content: start;
+  flex-direction: column; */
   margin-bottom: 15%;
   background-color: inherit;
+  position: sticky;
+
 }
 
 .return-home:hover {
