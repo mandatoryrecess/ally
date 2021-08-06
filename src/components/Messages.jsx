@@ -2,6 +2,7 @@ import axios from "axios";
 import React from "react";
 import "./Messages.css";
 import "./Collapsible.css";
+import  Navigation  from "./Navigation";
 
 import { Link, withRouter } from "react-router-dom";
 

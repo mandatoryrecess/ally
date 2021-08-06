@@ -4,6 +4,7 @@ import swap from "lodash-move";
 import { useGesture } from "react-with-gesture";
 import { useSprings, animated, interpolate } from "react-spring";
 import "./Ombre.css";
+import Navigation from "./Navigation";
 
 const fn = (order, down, originalIndex, curIndex, y) => (index) =>
   down && index === originalIndex
@@ -40,24 +41,27 @@ function Ombre({ items = "trust me everything will pass".split(" ") }) {
     if (!down) order.current = newOrder;
   });
   return (
-    <div class="content" style={{ height: items.length * 100 }}>
-      {springs.map(({ zIndex, shadow, y, scale }, i) => (
-        <animated.div
-          {...bind(i)}
-          key={i}
-          style={{
-            zIndex,
-            boxShadow: shadow.interpolate(
-              (s) => `rgba(0, 0, 0, 0.15) 0px ${s}px ${2 * s}px 0px`
-            ),
-            transform: interpolate(
-              [y, scale],
-              (y, s) => `translate3d(0,${y}px,0) scale(${s})`
-            ),
-          }}
-          children={items[i]}
-        />
-      ))}
+    <div>
+      <Navigation />
+      <div class="content" style={{ height: items.length * 100 }}>
+        {springs.map(({ zIndex, shadow, y, scale }, i) => (
+          <animated.div
+            {...bind(i)}
+            key={i}
+            style={{
+              zIndex,
+              boxShadow: shadow.interpolate(
+                (s) => `rgba(0, 0, 0, 0.15) 0px ${s}px ${2 * s}px 0px`
+              ),
+              transform: interpolate(
+                [y, scale],
+                (y, s) => `translate3d(0,${y}px,0) scale(${s})`
+              ),
+            }}
+            children={items[i]}
+          />
+        ))}
+      </div>
     </div>
   );
 }
