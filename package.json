@@ -23,7 +23,7 @@
     "react-dom": "^17.0.2",
     "react-images": "^1.2.0-beta.7",
     "react-images-viewer": "^1.6.7",
-    "react-rain-animation": "^1.0.4",
+    "react-parallax": "^3.3.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
     "react-spring": "^9.2.4",

@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import { Navigation, Home, Ripple, Messages, Animals, Dots, Ombre, Rain } from "./components";
+import { Navigation, Home, Ripple, Messages, Animals, Dots, Ombre, Rain, Galaxy } from "./components";
 import Journal from "./components/Journal";
 import Audio from "./components/Audio"
 
@@ -18,6 +18,7 @@ function App() {
           <Route path="/journal" exact component={() => <Journal />} />
           <Route path="/audio" exact component={() => <Audio />} />
           <Route path="/rain" exact component={() => <Rain />} />
+          <Route path="/galaxy" exact component={() => <Galaxy />} />
         </Switch>
       </Router>
       <Router>
