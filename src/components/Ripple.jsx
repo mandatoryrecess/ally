@@ -1,9 +1,11 @@
 import React from "react";
 import "./Ripple.css";
+import Navigation from "./Navigation";
 
 function Ripple() {
   return (
     <div class="sunset">
+      <Navigation />
       <div class="landscape">
         <div class="sun-container">
           <div class="sun"></div>

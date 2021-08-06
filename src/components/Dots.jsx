@@ -1,12 +1,14 @@
 import React from "react";
 import * as d3 from "d3";
-import './Dots.css'
+import "./Dots.css";
+import Navigation from "./Navigation";
 
 function Dots() {
   return (
     <div className="Dots">
-      <div class="container">
-      </div>
+      <Navigation />
+
+      <div class="container"></div>
     </div>
   );
 }

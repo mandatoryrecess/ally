@@ -105,7 +105,7 @@
   left: calc(60% - 10vmin);
   top: 100%;
   transform: translate3d(0, 0, 0);
-  animation: rise 50s infinite;
+  animation: rise 20s infinite;
   box-shadow: 0 0 10px white;
 }
 

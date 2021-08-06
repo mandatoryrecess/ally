@@ -8,7 +8,6 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <Navigation />
         <Switch>
           <Route path="/" exact component={() => <Home />} />
           <Route path="/ripple" exact component={() => <Ripple />} />
@@ -20,6 +19,9 @@ function App() {
           <Route path="/audio" exact component={() => <Audio />} />
           <Route path="/rain" exact component={() => <Rain />} />
         </Switch>
+      </Router>
+      <Router>
+        
       </Router>
     </div>
   );

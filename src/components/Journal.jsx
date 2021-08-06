@@ -4,6 +4,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import "./Journal.css";
 import axios from "axios";
 import { useHistory } from "react-router-dom";
+import  Navigation  from "./Navigation";
 
 const useStyles = makeStyles({
   root: {
@@ -43,6 +44,7 @@ export default function Journal() {
 
   return (
     <div class="journal">
+      <Navigation />
       <div class="uploading-thoughts">
         <form
         onSubmit={handleSubmit}

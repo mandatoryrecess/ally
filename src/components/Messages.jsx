@@ -2,6 +2,7 @@ import axios from "axios";
 import React from "react";
 import "./Messages.css";
 import "./Collapsible.css";
+import  Navigation  from "./Navigation";
 
 import { Link, withRouter } from "react-router-dom";
 
@@ -41,6 +42,7 @@ function Messages(props) {
 
   return (
     <div className="messages">
+      <Navigation />
       <Link to="/journal" class="pen">
         <img type="image/png" width="30px" alt="" src="/img/006-compose.png" />
       </Link>

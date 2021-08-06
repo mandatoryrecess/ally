@@ -16,7 +16,7 @@
   font-weight: 400;
   text-align: center;
   line-height: 18px;
-  overflow:scroll;
+  overflow-y: scroll; 
 }
 
 .container > div:nth-child(even) {
