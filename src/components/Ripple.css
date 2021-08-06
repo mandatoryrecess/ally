@@ -102,7 +102,7 @@
   border-radius: 50%;
   width: 15vmin;
   height: 15vmin;
-  left: calc(60% - 10vmin);
+  left: calc(65% - 10vmin);
   top: 100%;
   transform: translate3d(0, 0, 0);
   animation: rise 20s infinite;
