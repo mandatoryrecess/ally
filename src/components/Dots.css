@@ -1,0 +1,38 @@
+
+.light-body {
+  margin: 0;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  width: 325px;
+  border-radius: 20px;
+  box-shadow: 0 25px 40px -20px #808080;
+}
+
+.light-box {
+  background-image: url(
+    "https://imgur.com/60sUmCZ");
+  position: absolute;
+  top: calc(50% - 20px);
+  left: calc(50% - 20px);
+  width: 60px;
+  height: 60px;
+ 
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow:
+    0 0 60px 30px #fff,
+    0 0 100px 60px rgb(255, 251, 0),
+    0 0 140px 90px rgb(241, 86, 14);
+    animation: fade 8s infinite;
+  }
+  @keyframes fade {
+    10% {
+      opacity: 1;
+    }
+    30%, 70% {
+      opacity: 0;
+    }
+  }

@@ -8,12 +8,15 @@ function Dots() {
 
 
   return (
-    <div className="Dots">
+    <div>
       <Navigation />
+    <div class="light-body">
+    <div className="light-box">
 
-      <div class="container">
+     <div class="moon"></div>
 
       </div>
+    </div>
     </div>
   );
 }

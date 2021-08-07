@@ -1,0 +1,30 @@
+.path {
+  stroke-dasharray: 1600;
+  
+  animation: dash 30s linear infinite;
+  z-index: 10;
+}
+
+
+
+svg{
+  margin: 0;
+  background-color: --primary;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  width: 325px;
+  border-radius: 20px;
+  box-shadow: 0 25px 40px -20px #808080;
+  z-index: -10;
+}
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 3000;
+  }
+  to {
+    stroke-dashoffset: 10;
+  }
+}

@@ -17,11 +17,11 @@ function Home(props) {
         {/* NEW ROOM */}
 
         <Link
-          id="animals-room2"
+          id="line"
           class={`nav-item  ${
-            props.location.pathname === "/animals" ? "active" : ""
+            props.location.pathname === "/line" ? "active" : ""
           }`}
-          to="/animals"
+          to="/line"
         ></Link>
 
         {/* NEW ROOM */}
