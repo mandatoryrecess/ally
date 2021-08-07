@@ -1,7 +1,7 @@
 
 .light-body {
   margin: 0;
-  background-color: #000;
+  background-color: rgb(16, 21, 77);
   display: flex;
   justify-content: center;
   align-items: center;

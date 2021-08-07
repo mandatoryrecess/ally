@@ -1,5 +1,5 @@
 import React from "react";
-import "./Dots.css";
+import "./Light.css";
 import Navigation from "./Navigation";
 
 function Dots() {

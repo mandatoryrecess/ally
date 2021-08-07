@@ -28,9 +28,9 @@ function Home(props) {
         <Link
           id="dots-room2"
           class={`nav-item  ${
-            props.location.pathname === "/dots" ? "active" : ""
+            props.location.pathname === "/light" ? "active" : ""
           }`}
-          to="/dots"
+          to="/light"
         ></Link>
 
         <Link
@@ -60,9 +60,9 @@ function Home(props) {
         <Link
           id="dots-room"
           class={`nav-item  ${
-            props.location.pathname === "/dots" ? "active" : ""
+            props.location.pathname === "/light" ? "active" : ""
           }`}
-          to="/dots"
+          to="/light"
         ></Link>
 
         <Link
@@ -111,9 +111,9 @@ function Home(props) {
         <Link
           id="ripple-room2"
           class={`nav-item  ${
-            props.location.pathname === "/ripple" ? "active" : ""
+            props.location.pathname === "/ball" ? "active" : ""
           }`}
-          to="/ripple"
+          to="/ball"
         ></Link>
 
       </div>

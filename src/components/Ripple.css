@@ -102,10 +102,10 @@
   border-radius: 50%;
   width: 15vmin;
   height: 15vmin;
-  left: calc(65% - 10vmin);
+  left: calc(63% - 10vmin);
   top: 100%;
   transform: translate3d(0, 0, 0);
-  animation: rise 20s infinite;
+  animation: rise 45s infinite;
   box-shadow: 0 0 10px white;
 }
 
@@ -184,7 +184,7 @@
   right: 0;
   margin: auto;
   top: calc(50% + 1vmin);
-  animation: light 20s infinite;
+  animation: light 45s infinite;
   opacity: 0;
   transform: scaleX(0.1) translate3d(0%, 0, 0);
   border-radius: 0.25vh;
@@ -228,37 +228,37 @@
 }
 .light-1 {
   top: calc(50% + 2vmin);
-  animation-delay: 5.5s;
+  animation-delay: .5s;
 }
 .light-2 {
   top: calc(50% + 3vmin);
   width: 18vmin;
-  animation-delay: 3.5s;
+  animation-delay: 1.5s;
 }
 .light-3 {
   top: calc(50% + 4vmin);
   width: 18vmin;
-  animation-delay: 4s;
+  animation-delay: 2s;
 }
 .light-4 {
   top: calc(50% + 5vmin);
   width: 16vmin;
-  animation-delay: 5.5s;
+  animation-delay: 2.5s;
 }
 .light-5 {
   top: calc(50% + 8vmin);
   width: 14vmin;
-  animation-delay: 6s;
+  animation-delay: 3s;
 }
 .light-6 {
   top: calc(50% + 9vmin);
   width: 10vmin;
-  animation-delay: 6.5s;
+  animation-delay: 3.5s;
 }
 .light-7 {
   top: calc(50% + 7vmin);
   width: 12vmin;
-  animation-delay: 8s;
+  animation-delay: 4s;
 }
 .splash {
   width: 8vmin;
