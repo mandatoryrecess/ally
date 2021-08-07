@@ -9,5 +9,5 @@ export { default as Ombre } from "./Ombre";
 export { default as Audio } from "./Audio";
 export { default as Rain } from "./Rain";
 export { default as Line } from "./Line";
-export { default as Ball } from "./Ball";
+export { default as Stones } from "./Stones";
 

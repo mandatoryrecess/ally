@@ -1,0 +1,127 @@
+:root {
+  --v1: #022565;
+  --v2: #0078b9;
+  --v3: #1ea5d4;
+  --s1: #8cbcc6;
+  --s2: #aecfd6;
+  --r1: #575d5e;
+  --r2: #9fa3a4;
+  --r3: #99a1a2;
+  --r4: #3d4345;
+  --r5: #6f8a8f;
+  --r6: #292929;
+}
+
+
+.ball-body {
+  margin: 0;
+  background-image: linear-gradient(var(--s1), var(--v2), var(--v1));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 450px;
+  width: 325px;
+  border-radius: 20px;
+  box-shadow: 0 25px 40px -20px #808080;
+}
+
+.front {
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+#splash-1 {
+  width: 8vmin;
+  height: 3vmin;
+  border: 2px solid var(--s1);
+  box-shadow: 0 0 2px var(--s1);
+  border-radius: 50%;
+  bottom: 5vmin;
+  left: 60%;
+  animation: splash-1 9s;
+  transform: scale(0);
+}
+@keyframes splash-1 {
+  50%, 100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
+#splash-2 {
+  width: 8vmin;
+  height: 3vmin;
+  border: 2px solid var(--s1);
+  box-shadow: 0 0 2px var(--s1);
+  border-radius: 50%;
+  bottom: 5vmin;
+  left: 60%;
+  animation: splash-2 9s;
+  transform: scale(0);
+}
+@keyframes splash-2 {
+  50%, 100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
+#splash-3 {
+  width: 12vmin;
+  height: 5vmin;
+  border: 2.5px solid var(--s1);
+  box-shadow: 0 0 2px var(--s1);
+  border-radius: 50%;
+  bottom: 5vmin;
+  left: 60%;
+  animation: splash-3 20s;
+  transform: scale(0);
+}
+@keyframes splash-3 {
+  50%, 100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+.splash-4 {
+  bottom: 4vmin;
+  left: auto;
+  bottom: 13vmin;
+  right: -1vmin;
+}
+
+
+
+.stone-1 {
+  border-radius: 70% 70% 90% 70%;
+  margin:11px;
+  height: 50px;
+  width: 50px;
+  background-image: radial-gradient(farthest-corner at 30px 30px,
+  var(--r1) 40%, var(--r2) 90%);
+   box-shadow: 1px 1px 10px 1px #fdffff; 
+}
+
+.stone-2 {
+  border-radius: 80% 90% 80% 70%;
+  margin: 11px;
+  height: 60px;
+  width: 50px;
+  background-image: radial-gradient(farthest-corner at 30px 30px,
+  var(--r4) 40%, var(--r3) 90%);
+  box-shadow: 1px 1px 10px 1px #fdffff; 
+}
+
+.stone-3 {
+  border-radius: 60% 60% 80% 70%;
+  margin:11px;
+  height: 44px;
+  width: 50px;
+  background-image: radial-gradient(closest-corner at 30px 30px,
+  var(--r5) 60%, var(--r2) 100%);
+  box-shadow: 1px 1px 10px 1px #fdffff; 
+}

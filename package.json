@@ -29,6 +29,7 @@
     "react-spring": "^9.2.4",
     "react-with-gesture": "^4.0.8",
     "sass": "^1.37.2",
+    "use-sound": "^4.0.1",
     "web-vitals": "^1.1.2"
   },
   "scripts": {
