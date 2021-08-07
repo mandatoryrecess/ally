@@ -122,7 +122,7 @@
     transform: rotate(90deg);
   }
 }
-#animals-room2 {
+#light {
   background: var(--sixth);
   margin: -3%;
   border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
@@ -174,7 +174,7 @@
     width: 100%;
   }
 }
-#dots-room2 {
+#line {
   background: var(--third);
   opacity: .8;
   margin: 10%;

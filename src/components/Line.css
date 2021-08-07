@@ -1,15 +1,13 @@
 .path {
   stroke-dasharray: 1600;
-  
+
   animation: dash 30s linear infinite;
   z-index: 10;
 }
 
-
-
-svg{
+svg {
   margin: 0;
-  background-color: --primary;
+  background-color: var(--primary);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -24,6 +22,7 @@ svg{
   from {
     stroke-dashoffset: 3000;
   }
+
   to {
     stroke-dashoffset: 10;
   }

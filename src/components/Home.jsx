@@ -26,7 +26,7 @@ function Home(props) {
 
         {/* NEW ROOM */}
         <Link
-          id="dots-room2"
+          id="light"
           class={`nav-item  ${
             props.location.pathname === "/light" ? "active" : ""
           }`}
