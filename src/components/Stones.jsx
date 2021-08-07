@@ -1,5 +1,5 @@
 import React, { useRef } from 'react'
-import "./Ball.css";
+import "./Stones.css";
 import Navigation from "./Navigation";
 import useSound from 'use-sound';
 import WaterDrop from "./sound/WaterDrop.mp3";
@@ -23,7 +23,7 @@ function Ball() {
   
   function handleClickStone2(e) {
     e.preventDefault(); 
-    play2();
+    play4();
     console.log('clicked2')
     e.target.id = "splash-2";
   }
@@ -37,7 +37,7 @@ function Ball() {
   
   function handleClickStone4(e) {
     e.preventDefault(); 
-    play4();
+    play2();
     console.log('clicked1')
     e.target.id = "splash-1";
   }
@@ -49,11 +49,8 @@ function Ball() {
       <span class="stone-1" onClick={handleClickStone1}></span>
       <span class="stone-2" onClick={handleClickStone2}></span>
       <span class="stone-3" onClick={handleClickStone3}></span>
-      <span class="stone-1" onClick={handleClickStone4}></span>
-   
-           
+      <span class="stone-1" onClick={handleClickStone4}></span>       
       </div>
-
     </div>
   );
 }
