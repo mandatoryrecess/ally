@@ -8,5 +8,5 @@ export { default as Dots } from "./Dots";
 export { default as Ombre } from "./Ombre";
 export { default as Audio } from "./Audio";
 export { default as Rain } from "./Rain";
-export { default as Galaxy } from "./Galaxy";
+export { default as Galaxy } from "../Nightsky/Galaxy";
 

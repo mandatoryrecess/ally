@@ -1,5 +1,6 @@
 import React from 'react'
 import { ParallaxProvider, Parallax } from 'react-scroll-parallax';
+import Rainbow from './Rainbow';
 import "./Galaxy.css";
 
 
@@ -12,11 +13,9 @@ import "./Galaxy.css";
 
     return(
       <ParallaxProvider>
-      <div class="galaxy">
-        <h1 class="h1">Galaxy</h1>
-        <h1 class="h1">Galaxy</h1>
-        <h1 class="h1">Galaxy</h1>
-      </div>
+        <div className="galaxy">
+          <Rainbow/>
+        </div>
       </ParallaxProvider>
     );
 
