@@ -10,4 +10,5 @@ export { default as Audio } from "./Audio";
 export { default as Rain } from "./Rain";
 export { default as Line } from "./Line";
 export { default as Stones } from "./Stones";
+export { default as Birds } from "./Birds";
 
