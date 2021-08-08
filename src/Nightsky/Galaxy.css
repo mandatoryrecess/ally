@@ -1,4 +1,28 @@
-.galaxy {
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.margin {
+  margin: 75% 0;
+}
+
+.background {
+  background: url( 
+    https://i.imgur.com/WQBtl05.png)
+    repeat fixed 100%;
+}
+
+.foreground {
+  padding-top: 30%;
+  padding-bottom: 30%;
+}
+
+
+
+
+/* .galaxy {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -17,5 +41,5 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
+} */
 

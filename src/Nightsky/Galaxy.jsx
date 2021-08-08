@@ -1,6 +1,6 @@
 import React from 'react'
-import { ParallaxProvider, Parallax } from 'react-scroll-parallax';
-import Rainbow from './Rainbow';
+// import { ParallaxProvider, Parallax } from 'react-scroll-parallax';
+// import Rainbow from './Rainbow';
 import "./Galaxy.css";
 
 
@@ -12,58 +12,15 @@ import "./Galaxy.css";
     const rainbowStar = "https://i.imgur.com/qeOmPc0.png";
 
     return(
-      <ParallaxProvider>
-        <div className="galaxy">
-          <div>
-            <Rainbow/>
-          </div>
-          <div>
-            <Rainbow/>
-          </div>
-          <div>
-            <Rainbow/>
-          </div>
-          <div>
-            <Rainbow/>
-          </div>
-          <div>
-            <Rainbow/>
-          </div>
-          <div>
-            <Rainbow/>
-          </div>
-          <div>
-            <Rainbow/>
-          </div>
-          <div>
-            <Rainbow/>
-          </div>
-          <div>
-            <Rainbow/>
-          </div>
-          <div>
-            <Rainbow/>
-          </div>
-          <div>
-            <Rainbow/>
-          </div>
-          <div>
-            <Rainbow/>
-          </div>
-          <div>
-            <Rainbow/>
-          </div>
-          <div>
-            <Rainbow/>
-          </div>
-          <div>
-            <Rainbow/>
-          </div>
-          <div>
-            <Rainbow/>
-          </div>
+      <>
+      <div class="margin"></div>
+      <section class="background">
+        <div class="foreground">
+          <img src="https://i.imgur.com/qeOmPc0.png" alt=""/>
         </div>
-      </ParallaxProvider>
+      </section>
+      <div class="margin"></div>
+      </>
     );
 
   };
