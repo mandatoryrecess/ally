@@ -11,6 +11,7 @@ function Birds() {
     <div>
       <Navigation />
       <div className="bird-body">
+     
         <div class="container-bird" onClick={play}>
           <div class="bird-container bird-container--one">
             <div class="bird bird--one"></div>
@@ -27,6 +28,8 @@ function Birds() {
           <div class="bird-container bird-container--four">
             <div class="bird bird--four"></div>
           </div>
+          <div class=" cloud"></div>
+          <div class=" cloud-1"></div>
         </div>
       </div>
     </div>

@@ -1,6 +1,9 @@
+
+
+
 .bird-body {
   margin: 0;
-  background-image: linear-gradient(var(--s2), var(--r5), var(--s2));
+  background-image: linear-gradient(var(--s2), var(--r2), var(--r3));
   flex-wrap: wrap;
   height: 500px;
   width: 325px;
@@ -131,3 +134,23 @@
 	}
 }
  
+.cloud {
+  width: 70vmin;
+  height: 52vmin;
+  background: currentcolor;
+  color: var(--r3);
+  top: 24vmin;
+  left: -20vmin;
+  margin-bottom: 10%;
+  border-radius: 50%;
+  box-shadow: 30vmin 0.5vmin 0 -1vmin currentcolor, -25vmin 0 0 -0.6vmin currentcolor;
+  opacity: 0.7;
+  transform: translate3d(-150vmin, 0, 0);
+  animation: clouds 120s infinite;
+  animation-delay: -10s; }
+
+@keyframes clouds {
+  50% {
+    transform: translate3d(0, 0, 0); }
+  100% {
+    transform: translate3d(150vmin, 0, 0); } }
