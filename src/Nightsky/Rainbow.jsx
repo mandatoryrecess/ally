@@ -7,7 +7,7 @@ function Rainbow() {
 
   return(
     <Parallax y={[-20, 20]} tagOuter="figure">
-      <img class="rainbow-star" src={ rainbowStar } />
+      <img alt="" src={ rainbowStar } class="rainbow-star" transform="translate3d(0%, -106.305%, 0px)"/>
     </Parallax>
   );
 

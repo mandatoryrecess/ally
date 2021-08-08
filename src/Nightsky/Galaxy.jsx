@@ -14,7 +14,54 @@ import "./Galaxy.css";
     return(
       <ParallaxProvider>
         <div className="galaxy">
-          <Rainbow/>
+          <div>
+            <Rainbow/>
+          </div>
+          <div>
+            <Rainbow/>
+          </div>
+          <div>
+            <Rainbow/>
+          </div>
+          <div>
+            <Rainbow/>
+          </div>
+          <div>
+            <Rainbow/>
+          </div>
+          <div>
+            <Rainbow/>
+          </div>
+          <div>
+            <Rainbow/>
+          </div>
+          <div>
+            <Rainbow/>
+          </div>
+          <div>
+            <Rainbow/>
+          </div>
+          <div>
+            <Rainbow/>
+          </div>
+          <div>
+            <Rainbow/>
+          </div>
+          <div>
+            <Rainbow/>
+          </div>
+          <div>
+            <Rainbow/>
+          </div>
+          <div>
+            <Rainbow/>
+          </div>
+          <div>
+            <Rainbow/>
+          </div>
+          <div>
+            <Rainbow/>
+          </div>
         </div>
       </ParallaxProvider>
     );
