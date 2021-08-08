@@ -1,5 +1,5 @@
 import React from "react";
-import "./Ripple.css";
+import "./MoonRise.css";
 import Navigation from "./Navigation";
 
 function Ripple() {

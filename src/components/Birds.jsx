@@ -28,8 +28,8 @@ function Birds() {
           <div class="bird-container bird-container--four">
             <div class="bird bird--four"></div>
           </div>
-          <div class=" cloud"></div>
-          <div class=" cloud-1"></div>
+          <div class="mist"></div>
+        
         </div>
       </div>
     </div>

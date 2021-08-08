@@ -34,11 +34,11 @@ function Home(props) {
         ></Link>
 
         <Link
-          id="ripple-room"
+          id="moonrise-room"
           class={`nav-item  ${
-            props.location.pathname === "/ripple" ? "active" : ""
+            props.location.pathname === "/moonrise" ? "active" : ""
           }`}
-          to="/ripple"
+          to="/moonrise"
         ></Link>
 
         <Link
@@ -58,11 +58,11 @@ function Home(props) {
         ></Link>
 
         <Link
-          id="dots-room"
+          id="birds-room"
           class={`nav-item  ${
-            props.location.pathname === "/light" ? "active" : ""
+            props.location.pathname === "/birds" ? "active" : ""
           }`}
-          to="/light"
+          to="/birds"
         ></Link>
 
         <Link
@@ -109,11 +109,11 @@ function Home(props) {
 
 
         <Link
-          id="ripple-room2"
+          id="stones-room"
           class={`nav-item  ${
-            props.location.pathname === "/ball" ? "active" : ""
+            props.location.pathname === "/stones" ? "active" : ""
           }`}
-          to="/ball"
+          to="/stones"
         ></Link>
 
       </div>

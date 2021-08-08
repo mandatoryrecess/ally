@@ -52,7 +52,7 @@
   perspective: 1000px;
 }
 
-#ripple-room {
+#moonrise-room {
   background: var(--secondary);
   opacity: 0.7;
   margin: -12%;
@@ -69,7 +69,7 @@
   perspective: 1000px;
 }
 
-#ripple-room2 {
+#stones-room {
   background: var(--eigth);
   opacity: 0.7;
   margin: -5%;
@@ -144,7 +144,7 @@
 
 
 
-#dots-room {
+#birds-room {
   background: var(--fourth);
   opacity: .8;
   margin: 3%;
