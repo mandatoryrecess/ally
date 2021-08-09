@@ -12,15 +12,19 @@ import "./Galaxy.css";
     const rainbowStar = "https://i.imgur.com/qeOmPc0.png";
 
     return(
-      <>
-      <div class="margin"></div>
-      <section class="background">
-        <div class="foreground">
-          <img src="https://i.imgur.com/qeOmPc0.png" alt=""/>
-        </div>
-      </section>
-      <div class="margin"></div>
-      </>
+      <div
+      className="scroll-test"
+      style={{
+        height: "100vh", // try 100% here
+        width: "100vw",
+        overflowY: "scroll",
+        zIndex: 1,
+        top: 0,
+        left: 0,
+      }}
+    >
+      <img src="https://i.imgur.com/u9QduVC.png" />
+    </div>
     );
 
   };
