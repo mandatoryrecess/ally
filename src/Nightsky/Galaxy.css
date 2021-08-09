@@ -1,4 +1,14 @@
-* {
+.galaxy {
+  height: 100vh;
+  width: 100vw;
+  overflow-y: scroll;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+
+
+/* * {
   margin: 0;
   padding: 0;
   border: 0;
@@ -17,10 +27,7 @@
 .foreground {
   padding-top: 30%;
   padding-bottom: 30%;
-}
-
-
-
+} */
 
 /* .galaxy {
   position: absolute;
