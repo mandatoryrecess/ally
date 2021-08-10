@@ -55,23 +55,27 @@ body {
 }
 
 .content > div:nth-child(1) {
-  background: var(--primary);
-  color: var(--primary);
+  background: var(--third);
+  color: var(--third);
 }
 .content > div:nth-child(2) {
   background: var(--secondary);
   color: var(--secondary);
 }
 .content > div:nth-child(3) {
-  background: var(--third);
-  color: var(--third);
-}
-.content > div:nth-child(4) {
   background: var(--fourth);
   color: var(--fourth);
+}
+.content > div:nth-child(4) {
+  background: var(--primary);
+  color: var(--primary);
 }
 
 .content > div:nth-child(5) {
   background: var(--fifth);
   color: var(--fifth);
 }
+
+
+
+
