@@ -12,7 +12,7 @@ function Home(props) {
             props.location.pathname === "/ombre" ? "active" : ""
           }`}
           to="/ombre"
-        ></Link>
+        >ombre</Link>
 
         {/* NEW ROOM */}
 
@@ -22,7 +22,7 @@ function Home(props) {
             props.location.pathname === "/line" ? "active" : ""
           }`}
           to="/line"
-        ></Link>
+        >LINE</Link>
 
         {/* NEW ROOM */}
         <Link
@@ -31,7 +31,7 @@ function Home(props) {
             props.location.pathname === "/light" ? "active" : ""
           }`}
           to="/light"
-        ></Link>
+        >light</Link>
 
         <Link
           id="moonrise-room"
@@ -39,7 +39,7 @@ function Home(props) {
             props.location.pathname === "/moonrise" ? "active" : ""
           }`}
           to="/moonrise"
-        ></Link>
+        >moonrise</Link>
 
         <Link
           id="messages-room"
@@ -47,7 +47,7 @@ function Home(props) {
             props.location.pathname === "/messages" ? "active" : ""
           }`}
           to="/messages"
-        ></Link>
+        >messages</Link>
 
         <Link
           id="animals-room"
@@ -55,7 +55,7 @@ function Home(props) {
             props.location.pathname === "/animals" ? "active" : ""
           }`}
           to="/animals"
-        ></Link>
+        >animals</Link>
 
         <Link
           id="birds-room"
@@ -63,15 +63,15 @@ function Home(props) {
             props.location.pathname === "/birds" ? "active" : ""
           }`}
           to="/birds"
-        ></Link>
+        >birds</Link>
 
         <Link
           id="thought-space"
           class={`nav-item  ${
-            props.location.pathname === "/journal" ? "active" : ""
+            props.location.pathname === "/stones" ? "active" : ""
           }`}
-          to="/journal"
-        ></Link>
+          to="/stones"
+        >Stones</Link>
 
         <Link
           id="fire-room"
@@ -79,17 +79,17 @@ function Home(props) {
             props.location.pathname === "/audio" ? "active" : ""
           }`}
           to="/audio"
-        ></Link>
+        >audio</Link>
 
         {/* NEW ROOM */}
 
         <Link
           id="galaxy-room2"
           class={`nav-item  ${
-            props.location.pathname === "/galaxy" ? "active" : ""
+            props.location.pathname === "/audio" ? "active" : ""
           }`}
-          to="/galaxy"
-        ></Link>
+          to="/audio"
+        >Audio</Link>
 
         <Link
           id="rain-room"
@@ -97,15 +97,15 @@ function Home(props) {
             props.location.pathname === "/rain" ? "active" : ""
           }`}
           to="/rain"
-        ></Link>
+        >rain</Link>
 
         <Link
           id="galaxy-room"
           class={`nav-item  ${
-            props.location.pathname === "/galaxy" ? "active" : ""
+            props.location.pathname === "/light" ? "active" : ""
           }`}
-          to="/galaxy"
-        ></Link>
+          to="/light"
+        >Light</Link>
 
 
         <Link
@@ -114,7 +114,7 @@ function Home(props) {
             props.location.pathname === "/stones" ? "active" : ""
           }`}
           to="/stones"
-        ></Link>
+        >stones</Link>
 
       </div>
     </div>
