@@ -7,7 +7,7 @@ const api_call = "/api/animals";
 
 function Animals(props) {
   const [animal, setAnimal] = React.useState(null);
-  const [currentAnimalIndex, setcurrentAnimalIndex] = React.useState(0);
+  const [currentAnimalIndex, setCurrentAnimalIndex] = React.useState(0);
 
   React.useEffect(() => {
     axios.get(api_call).then((response) => {
@@ -17,10 +17,15 @@ function Animals(props) {
 
   if (!animal) return null;
 
-  const nextAnimal = function(){
+  function nextAnimal(){
+    //if current picture is the last one, return to the beginning
+    if (currentAnimalIndex === animal.length - 1) {
+      setCurrentAnimalIndex(0)
+      return;
+    }
 
-    setcurrentAnimalIndex((prev) => (prev + 1))
-
+    setCurrentAnimalIndex((prev) => prev + 1)
+ 
   };
  
   return (
