@@ -6,8 +6,8 @@ export default function Audio() {
   return (
     <div>
       <Navigation />
-    <div class="click-body">
-    <svg viewBox="0 0 300 500">
+    <div class="click-body ">
+    <svg viewBox="0 0 300 500" >
 
   <path class="path" fill="white" stroke="#96c1e9" stroke-width="1" d="M31.01,165.97c12.81,4.86,27.37,10.27,41.13,6.06c10.32-3.16,19.47-11.46,20.2-22.7c0.07-1.08-0.97-2-2-2
 			c-12.87,0.05-26.79,3.11-39.27-1.26c-9.03-3.16-18.8-11.78-17.21-22.32c1.3-8.6,11.16-14.57,19.45-12.75

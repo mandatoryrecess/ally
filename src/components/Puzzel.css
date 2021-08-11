@@ -1,0 +1,23 @@
+
+.puzzel-body {
+  margin: 0;
+  flex-wrap: wrap;
+  height: 500px;
+  width: 325px;
+  border-radius: 20px;
+  box-shadow: 0 25px 40px -20px #808080;
+}
+
+.abstract1 {
+    background-image: url(./svg/abstract-1-outline.svg);
+}
+
+.open {
+  background-image: url(./svg/abstract-1.svg);
+  filter:grayscale();
+}
+
+#abstract2 {
+  background-image: url(./svg/abstract-2.svg);
+}
+
