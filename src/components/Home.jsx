@@ -12,7 +12,7 @@ function Home(props) {
             props.location.pathname === "/ombre" ? "active" : ""
           }`}
           to="/ombre"
-        >ombre</Link>
+        ></Link>
 
         {/* NEW ROOM */}
 
@@ -22,7 +22,7 @@ function Home(props) {
             props.location.pathname === "/line" ? "active" : ""
           }`}
           to="/line"
-        >LINE</Link>
+        ></Link>
 
         {/* NEW ROOM */}
         <Link
@@ -31,7 +31,7 @@ function Home(props) {
             props.location.pathname === "/light" ? "active" : ""
           }`}
           to="/light"
-        >light</Link>
+        ></Link>
 
         <Link
           id="moonrise-room"
@@ -39,7 +39,7 @@ function Home(props) {
             props.location.pathname === "/moonrise" ? "active" : ""
           }`}
           to="/moonrise"
-        >moonrise</Link>
+        ></Link>
 
         <Link
           id="messages-room"
@@ -47,7 +47,7 @@ function Home(props) {
             props.location.pathname === "/messages" ? "active" : ""
           }`}
           to="/messages"
-        >messages</Link>
+        ></Link>
 
         <Link
           id="animals-room"
@@ -55,7 +55,7 @@ function Home(props) {
             props.location.pathname === "/animals" ? "active" : ""
           }`}
           to="/animals"
-        >animals</Link>
+        ></Link>
 
         <Link
           id="birds-room"
@@ -63,7 +63,7 @@ function Home(props) {
             props.location.pathname === "/birds" ? "active" : ""
           }`}
           to="/birds"
-        >birds</Link>
+        ></Link>
 
         <Link
           id="thought-space"
@@ -71,7 +71,7 @@ function Home(props) {
             props.location.pathname === "/stones" ? "active" : ""
           }`}
           to="/stones"
-        >Stones</Link>
+        ></Link>
 
         <Link
           id="fire-room"
@@ -79,7 +79,7 @@ function Home(props) {
             props.location.pathname === "/audio" ? "active" : ""
           }`}
           to="/audio"
-        >audio</Link>
+        ></Link>
 
         {/* NEW ROOM */}
 
@@ -89,7 +89,7 @@ function Home(props) {
             props.location.pathname === "/audio" ? "active" : ""
           }`}
           to="/audio"
-        >Audio</Link>
+        ></Link>
 
         <Link
           id="rain-room"
@@ -97,7 +97,7 @@ function Home(props) {
             props.location.pathname === "/rain" ? "active" : ""
           }`}
           to="/rain"
-        >rain</Link>
+        ></Link>
 
         <Link
           id="galaxy-room"
@@ -105,7 +105,7 @@ function Home(props) {
             props.location.pathname === "/light" ? "active" : ""
           }`}
           to="/light"
-        >Light</Link>
+        ></Link>
 
 
         <Link
@@ -114,7 +114,7 @@ function Home(props) {
             props.location.pathname === "/stones" ? "active" : ""
           }`}
           to="/stones"
-        >stones</Link>
+        ></Link>
 
       </div>
     </div>
