@@ -63,7 +63,7 @@ export default function Journal() {
 
           <div class="mood-bar">
             <IconButton
-              onClick={() => setEmoji("https://i.imgur.com/tdJnqXF.png")}
+              onClick={() => setEmoji("https://i.imgur.com/EXidpxa.png")}
               className={classes.root}
               color="secondary"
               aria-label="test"
@@ -72,7 +72,7 @@ export default function Journal() {
             </IconButton>
 
             <IconButton
-              onClick={() => setEmoji("https://i.imgur.com/2G6Cc0q.png")}
+              onClick={() => setEmoji("https://i.imgur.com/b2Vc2M0.png")}
               className={classes.root}
               color="secondary"
               aria-label="test"
@@ -81,7 +81,7 @@ export default function Journal() {
             </IconButton>
 
             <IconButton
-              onClick={() => setEmoji("https://i.imgur.com/tdJnqXF.png")}
+              onClick={() => setEmoji("https://i.imgur.com/FdubErv.png")}
               className={classes.root}
               color="secondary"
               aria-label="test"
@@ -90,7 +90,7 @@ export default function Journal() {
             </IconButton>
 
             <IconButton
-              onClick={() => setEmoji("https://i.imgur.com/WVNoRDr.png")}
+              onClick={() => setEmoji("https://i.imgur.com/bjgG0nF.png")}
               className={classes.root}
               color="secondary"
               aria-label="test"
@@ -99,7 +99,7 @@ export default function Journal() {
             </IconButton>
 
             <IconButton
-              onClick={() => setEmoji("https://i.imgur.com/efuce6E.png")}
+              onClick={() => setEmoji("https://i.imgur.com/1PdTTbT.png")}
               className={classes.root}
               color="secondary"
               aria-label="test"

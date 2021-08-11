@@ -22,7 +22,7 @@ function Animals(props) {
     if (currentAnimalIndex === animal.length - 1) {
       setCurrentAnimalIndex(0)
       return;
-    }
+    };
 
     setCurrentAnimalIndex((prev) => prev + 1)
  
