@@ -18,7 +18,7 @@ Animal Pictures
 Color Sorting
 Anonymous messages
 
-	![screenshot of app](https://raw.githubusercontent.com/mandatoryrecess/ally/main/public/Ally%20Screenshot.png)
+![screenshot of app](https://raw.githubusercontent.com/mandatoryrecess/ally/main/public/Ally%20Screenshot.png)
 
 
 
