@@ -1,4 +1,5 @@
 # Ally 
+A final project at Lighthouse Labs
 
 ## In the modern era, our phone is a companion, but can we make sure that it’s a companion that we want to be with? 
 
@@ -11,12 +12,12 @@ ALLY moves towards solving the issue of smartphone users reaching to their phone
 
 Ally prioritizes experience over information and uses a textless UI to provide a non-intrusive user experience where users can let go of their thoughts. 
 
-Features:
-Visual Rooms
-Sound Rooms
-Animal Pictures
-Color Sorting
-Anonymous messages
+-Features:
+-Visual Rooms
+-Sound Rooms
+-Animal Pictures
+-Color Sorting
+-Anonymous messages
 
 ![screenshot of app](https://raw.githubusercontent.com/mandatoryrecess/ally/main/public/Ally%20Screenshot.png)
 
