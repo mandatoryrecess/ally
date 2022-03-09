@@ -12,7 +12,7 @@ ALLY moves towards solving the issue of smartphone users reaching to their phone
 
 Ally prioritizes experience over information and uses a textless UI to provide a non-intrusive user experience where users can let go of their thoughts. 
 
-- Features:
+Features:
 - Visual Rooms
 - Sound Rooms
 - Animal Pictures
