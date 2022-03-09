@@ -18,6 +18,10 @@ Animal Pictures
 Color Sorting
 Anonymous messages
 
+	![screenshot of app](https://raw.githubusercontent.com/mandatoryrecess/ally/main/public/Ally%20Screenshot.png)
+
+
+
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
