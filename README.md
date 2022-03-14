@@ -21,8 +21,7 @@ Features:
 
 ![screenshot of app](https://raw.githubusercontent.com/mandatoryrecess/ally/main/public/Ally%20Screenshot.png)
 
-
-
+![GIF of app](https://github.com/mandatoryrecess/ally/blob/main/public/Ally%20GIF%201.gif?raw=true)
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
